@@ -10,6 +10,7 @@ bool isArm(int n){
     while(n != 0){
         count++;
         n = n/10;
+        
     }
     n = dup;
     cout<<"n is = "<<n<<endl;
