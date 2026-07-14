@@ -2,25 +2,28 @@
 using namespace std;
 int cnt = 0;
 int sum = 0;
+
+int fact = 1;
+int cn = 1;
 int f(int n){
     // if(n < 1) 
     // return n;
     // cout<<n<<" ";
     // n--;
 
-    if(cnt > n)
-    return cnt;
-    sum = cnt + sum;
-    cout<<sum<<" ";
-    cnt++;
+    if(cn > n)
+    return fact;
+    fact = cn * fact;
+    cout<<fact<<" ";
+    cn++;
     int ans = f(n);
      return ans;
 }
 
 int main(){
-    int n = 10;
+    int n = 5;
     int ans = f(n);
     cout<<endl;
-    cout<< "last output" <<" "<< ans; 
+    cout<< "the factorial of "<< n <<" is "<< ans; 
     return 0;
 }
