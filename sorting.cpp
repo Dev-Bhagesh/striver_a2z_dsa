@@ -16,14 +16,7 @@ int main(){
 
     for(int i = 0;i<n-1;i++){
         min = arr[i];
-        // for(int j = i;j<=n-1;j++){
-        //     if(min> arr[j]){
-        //         // int temp = min;
-        //         arr[i] = arr[j];
-        //         arr[j] = min;
-        //     }
-        // }
-        // min = 0;
+       
         for(int j = i;j<=n-1;j++){
             if(arr[j]<min){
                 min = arr[j];
